@@ -3,8 +3,12 @@
 html {
   font-family: "Montserrat Alternates", "Tahoma", sans-serif;
   font-size: 10px;
+  color: #24252e;
 }
 
+.app-content-wrapper {
+  padding: 0px 8rem;
+}
 .btn {
   font-size: 1.6rem;
   font-weight: 500;
@@ -53,13 +57,18 @@ html {
 }
 
 .header {
+    /* padding: 32px 80px; */
+
+}
+
+.header-content-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #e2e8f7;
-  padding: 32px 80px;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
 }
-
 .header__list {
   display: flex;
   justify-content: space-between;
@@ -82,4 +91,91 @@ html {
   height: 0.4rem;
   background-color: #ee3124;
   margin: 0 40px;
+}
+.link:visited {
+border: none;
+
+}
+.link:focus {
+outline: none;    
+
+}
+.link:hover {
+  color: red;
+
+
+}
+.link:active {
+  color: blue;
+
+
+}
+.logo {
+  width: max-content;
+  flex-shrink:0 ;
+
+}
+
+.logo__icone {
+  width: max-content;
+  min-width: 100%;
+  object-fit: contain;
+
+}
+ .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px  #A1BCE8;
+  ;
+ }
+
+ .avatar__icon {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+ }
+
+ .comment__user-info {
+  display: flex;
+  align-items: center ;
+  gap: 1.2rem;
+                                                            
+ }
+
+.comment__user-info-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.text {
+  font-weight: 400;
+  font-style: 1.6rem;
+}
+
+
+.comment__user-name {
+  font-weight: 500;
+
+}
+
+.comment__user-job{
+  color: #7F7F7F;
+  ;
+
+}
+.comment-wrapper{
+  display: flex;
+  flex-direction: column;
+  min-width: 397px;
+  gap: 2rem;
+}
+
+.comment {
+ 
+  border: 1px solid #E2E8F7;
+  padding:40px ;
+  min-width: 477px;
+  border-radius: 40px;
 }
